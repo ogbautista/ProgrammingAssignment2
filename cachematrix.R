@@ -1,4 +1,4 @@
-## These functions allow to create a List of functions that allows to set a value for a matrix
+## These functions allow to create a List of functions that sets and retrieve a matrix and its inverse
 ## when the inverse of the matrix has been calculated it is cached for further use
 ## If the matrix is set a new value, the catched Inverse is deleted and need to be calculated again
 
@@ -20,7 +20,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## This function returns the value of the cached matrix inverse
-## if it has not been calculated before, then the inverse calculation is done and cached. The inverse is returned
+## if it has not been calculated before, then the inverse calculation is done and cached. The inverse is returned.
 ## if the inverse can not be calculated for different reasons, a message is displayed and a NULL returned 
 
 cacheSolve <- function(x, ...) {
